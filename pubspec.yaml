@@ -37,8 +37,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_maps_flutter: ^2.2.3
-  geolocator: ^9.0.2
+
   velocity_x: ^3.6.0
+  flutter_geocoder: ^0.2.2-nullsafety
+  geocoder2: ^1.4.0
+
 
 dev_dependencies:
   flutter_test:
