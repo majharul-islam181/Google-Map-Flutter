@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         markerId: MarkerId('3'),
         position: LatLng(22.818968, 90.434371),
         infoWindow: InfoWindow(title: "My Position 3")),
+
   ];
 
   @override
@@ -55,10 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
           // compassEnabled: false,
 
           markers: Set<Marker>.of(_marker),
-
+          
           initialCameraPosition: _cameraPosition,
-          onMapCreated: (GoogleMapController controller) =>
-              _completer.complete(controller),
+          onMapCreated: (GoogleMapController controller) => _completer.complete(controller),
         ),
         floatingActionButton: FloatingActionButton(
             child: const Icon(Icons.location_disabled_outlined),
