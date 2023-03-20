@@ -32,7 +32,9 @@ class _ConvertLatLangToAddressState extends State<ConvertLatLangToAddress> {
           20.heightBox,
           GestureDetector(
             onTap: () async {
+              // convert address to lang
               List<Location> locations = await locationFromAddress("Gronausestraat 710, Enschede");
+              // convert lang to address
               List<Placemark> placemarks = await placemarkFromCoordinates(23.8191, 90.4526);
 
               setState(() {
