@@ -105,7 +105,10 @@ class _GetUserCurrentLocationScreenState
         onPressed: () {
 
 
-          // by pressing 
+          // AIzaSyBq1XDMnxQMK8o0lTxrWhrX4UhBkL420kk
+
+
+          ///////////// by pressing ////////////////
           getUserCurrentLocations().then((value) async {
             print('my current location === > ');
             print(value.latitude.toString() + " " + value.longitude.toString());
@@ -118,7 +121,7 @@ class _GetUserCurrentLocationScreenState
                   position: LatLng(value.latitude, value.longitude),
                   infoWindow: const InfoWindow(
                     title: 'My current location',
-                  )),
+                  )),   
             );
 
             // after adding marker then change camera positions
@@ -132,6 +135,7 @@ class _GetUserCurrentLocationScreenState
 
             setState(() {});
           });
+
         },
         child: const Icon(Icons.local_activity),
       ),
