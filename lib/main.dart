@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 // import 'package:googlemap/get_user_current_locationScreen.dart';
 // import 'package:googlemap/google_place_api.dart';
 
-import 'custom_marker_screen.dart';
+import 'custom_marker_info_window.dart';
+// import 'custom_marker_screen.dart';
 // import 'package:googlemap/home_screen.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData( 
       primarySwatch: Colors.blue,
       ),
-      home: const CustomMarkerScreen(),
+      home: const CustomMarkerInfoWindow(),
     );
   }
 }
